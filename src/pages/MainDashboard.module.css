@@ -1,0 +1,12 @@
+.flex{
+    display: flex;
+}
+.sidebar{
+    width: 280px;
+    height: 100vh;
+    border-right: 1px dashed rgb(230, 207, 207);
+}
+.mainPanel{
+    width: calc(100vw - 281px);
+    height: 100vh;
+}

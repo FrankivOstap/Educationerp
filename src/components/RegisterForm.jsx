@@ -71,10 +71,10 @@ export default function RegisterForm() {
 
   const handlerFirstName = (event) => {
     setFirstName(event.target.value);
-   
-    if (event.target.value.length<3) {
+
+    if (event.target.value.length < 3) {
       setFirstNameError(false);
-    } else  {
+    } else {
       setFirstNameError(true);
     }
   };
@@ -102,31 +102,37 @@ export default function RegisterForm() {
     } else {
       setPasswordError(true);
     }
-  }
+  };
   const handlerRetypePassword = (event) => {
     if (event.target.value === password) {
       setPasswordRetypeError(true);
     } else {
       setPasswordRetypeError(false);
     }
-  }
+  };
   const handlerCheckbox = (event) => {
     setRemember(event.target.checked);
-  }
+  };
 
   const handlerRegisterData = (e) => {
     e.preventDefault();
-    
-if (firstNameError===true && lastNameError===true && emailError===true && passwordError===true && passwordRetypeError===true ) {
-    const RegisterData = {
-      firstName: firstName,
-      lastName: lastName,
-      email: email,
-      password: password,
-      remember: remember,
-    };
-    console.log(RegisterData);
-  }
+
+    if (
+      firstNameError === true &&
+      lastNameError === true &&
+      emailError === true &&
+      passwordError === true &&
+      passwordRetypeError === true
+    ) {
+      const RegisterData = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password,
+        remember: remember,
+      };
+      console.log(RegisterData);
+    }
   };
   return (
     <form onSubmit={handlerRegisterData}>
@@ -137,7 +143,7 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
         <div className={classes.wrapper__inpFirst}>
           <input
             className={`${classes.inpFirst} ${
-              firstNameError===false ?  classes.bordred : ""
+              firstNameError === false ? classes.bordred : ""
             }`}
             type="text"
             placeholder="First name"
@@ -148,7 +154,7 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
           <span
             className={`${classes.noblock} ${
               focusFirst && classes.inp1__userid
-            } ${firstNameError===false ? classes.red : ""} `}
+            } ${firstNameError === false ? classes.red : ""} `}
           >
             First name
           </span>
@@ -157,7 +163,7 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
         <div className={classes.wrapper__inpLast}>
           <input
             className={`${classes.inpLast} ${
-              lastNameError===false ? classes.bordred : ""
+              lastNameError === false ? classes.bordred : ""
             } `}
             type="text"
             placeholder="Last name"
@@ -168,7 +174,7 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
           <span
             className={`${classes.noblock} ${
               focusLast && classes.inp1__userid
-            } ${lastNameError===false ? classes.red : ""} `}
+            } ${lastNameError === false ? classes.red : ""} `}
           >
             Last name
           </span>
@@ -177,7 +183,9 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
 
       <div className={classes.wrapper__inp1}>
         <input
-          className={`${classes.inp1} ${emailError===false ? classes.bordred : ""}`}
+          className={`${classes.inp1} ${
+            emailError === false ? classes.bordred : ""
+          }`}
           type="email"
           placeholder="Email address"
           onInput={() => setFocus(true)}
@@ -186,7 +194,7 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
         />
         <span
           className={`${classes.noblock} ${focus && classes.inp1__email} ${
-            emailError===false ? classes.red : ""
+            emailError === false ? classes.red : ""
           } `}
         >
           Email address
@@ -195,7 +203,9 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
 
       <div className={classes.wrapper__inp2}>
         <input
-        className={` ${classes.inp2} ${passwordError===false ? classes.bordred : ""}`}
+          className={` ${classes.inp2} ${
+            passwordError === false ? classes.bordred : ""
+          }`}
           type={showPassword ? "text" : "password"}
           placeholder="Password"
           onInput={() => setFocus2(true)}
@@ -206,7 +216,7 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
         </div>
         <span
           className={`${classes.noblock} ${focus2 && classes.inp2__password}
-          ${passwordError===false ? classes.red : ""}`}
+          ${passwordError === false ? classes.red : ""}`}
         >
           Password
         </span>
@@ -214,7 +224,9 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
 
       <div className={classes.wrapper__inp2}>
         <input
-  className={`${classes.inp2} ${passwordRetypeError===false ? classes.bordred : "" } `}
+          className={`${classes.inp2} ${
+            passwordRetypeError === false ? classes.bordred : ""
+          } `}
           type={showRetypePassword ? "text" : "password"}
           placeholder="Retype password"
           onInput={() => setFocus3(true)}
@@ -225,7 +237,7 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
         </div>
         <span
           className={`${classes.noblock} ${focus3 && classes.inp2__password}
-          ${passwordRetypeError===false ? classes.red : ""}`}
+          ${passwordRetypeError === false ? classes.red : ""}`}
         >
           Retype password
         </span>
@@ -233,12 +245,16 @@ if (firstNameError===true && lastNameError===true && emailError===true && passwo
 
       <div className={classes.fieldremember}>
         <label>
-          <input className={classes.checkbox} onChange={handlerCheckbox} type="checkbox" />{" "}
+          <input
+            className={classes.checkbox}
+            onChange={handlerCheckbox}
+            type="checkbox"
+          />{" "}
           <span className={classes.textremember}>Remember me</span>
         </label>
         <p className={classes.fieldremember__p}>Forgot password?</p>
       </div>
-      <button type="submit"  className={classes.btnLogin}>
+      <button type="submit" className={classes.btnLogin}>
         Register
       </button>
       <p className={classes.text}>

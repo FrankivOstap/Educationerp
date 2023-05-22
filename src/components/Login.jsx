@@ -14,12 +14,14 @@ export default function Login() {
     <div className={classes.wrapper}>
 
         <div className={classes.leftblock}>
+             <div className={classes.dekor}>
             <div className={classes.leftblock__logo}>
                 <img src={logo} alt="logo" />
                 <p>Une formation, et devenez encore une meilleur version de vous-même!</p>
             </div>
             <div className={classes.leftblock__picture}>
                 <img src={picturelogin} alt="img" />
+            </div>
             </div>
         </div>
 

@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapperLogo {
+  padding: 30px;
+}
+.avatarBlock {
+  background-color: #8f3abc;
+  border-radius: 12px;
+  width: 240px;
+  height: 76px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nameUser {
+  color: white;
+}
+.name {
+  font-weight: 600;
+  font-size: 14px;
+}
+.role {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.dashboard {
+  width: 100%;
+  height: 200px;
+}
+.dashboardParag {
+  padding: 30px 0px 10px 30px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.sidebarMenu {
+  margin-top: 10px;
+
+  padding: 0px 30px 20px;
+  display: flex;
+  align-items: center;
+}
+.menuText {
+  color: #637381;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 16px;
+}

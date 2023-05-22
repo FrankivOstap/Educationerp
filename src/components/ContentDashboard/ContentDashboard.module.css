@@ -1,0 +1,67 @@
+.container {
+  background-color: #F5F5F5;
+  min-height: calc(100vh - 92px);
+  width: calc(100vw - 281px);
+  padding-top: 24px;
+}
+.panel {
+  border-radius: 20px;
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ecc8ff;
+  margin: 0px 40px;
+}
+.panelText {
+  margin: 40px;
+}
+.panelText h2 {
+  font-weight: 700;
+}
+.panelText p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #212b36;
+}
+.panelImg {
+  padding: 20px;
+}
+.btn {
+  background-color: #8f3abc;
+  border: none;
+  color: white;
+  width: 84px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+.card {
+  margin-top: 24px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  width: 343px;
+  height: 166px;
+}
+.card__data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.percentBlock{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
