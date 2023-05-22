@@ -1,0 +1,103 @@
+.container {
+  padding: 0 20px;
+}
+.container__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__heading h1 {
+  color: #212b36;
+  font-size: 24px;
+}
+.container__heading_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 36px;
+  background-color: #8f3abc;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+.container__lists {
+  border-radius: 20px;
+  margin-top: 40px;
+  width: 100%;
+  height: 500px;
+  box-shadow: 0px 16px 32px -4px rgba(145, 158, 171, 0.16);
+}
+.container__lists_inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.blockInput_search {
+  position: relative;
+}
+.blockInput_search input {
+  border: 1px solid rgba(210, 215, 219, 0.32);
+  height: 36px;
+  padding-left: 30px;
+  width: 500px;
+  border-radius: 8px;
+}
+.img_search {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.selectCourseBlock {
+  position: relative;
+}
+.filterBlock {
+  position: relative;
+}
+
+.select {
+  border: none;
+  border: 1px solid rgba(210, 215, 219, 0.32);
+  width: 200px;
+  height: 36px;
+  border-radius: 8px;
+}
+.textSelect {
+  background-color: white;
+  color: #919eab;
+  font-size: 12px;
+  position: absolute;
+  top: -7px;
+  left: 10px;
+}
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+thead {
+  border-bottom: 1px solid rgb(230, 215, 215);
+}
+.progressbar {
+  height: 10px;
+  background-color: rgb(112, 233, 112);
+  border-radius: 10px;
+}
+.progress {
+  width: 55%;
+  height: 10px;
+  background-color: green;
+  border-radius: 10px;
+}
+.btnView {
+  border-radius: 8px;
+  color: white;
+  border: none;
+  background-color: #8f3abc;
+  width: 51px;
+  height: 30px;
+}
