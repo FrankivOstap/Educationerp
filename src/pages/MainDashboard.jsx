@@ -1,12 +1,14 @@
 import React from 'react'
+
 import Header from '../components/Header/Header'
 import classes from './MainDashboard.module.css'
 import Sidebar from '../components/Sidebar/Sidebar'
+import ProfileDetails from '../components/ProfileDetails/ProfileDetails'
 
-/*import ContentDashboard from '../components/ContentDashboard/ContentDashboard'*/
 
-import ListOfTrainee from '../components/ListOfTrainee/ListOfTrainee'
 
+/*import ListOfTrainee from '../components/ListOfTrainee/ListOfTrainee'
+import ContentDashboard from '../components/ContentDashboard/ContentDashboard'*/
 export default function MainDashboard() {
   return (
     <div className={classes.flex}>
@@ -15,8 +17,10 @@ export default function MainDashboard() {
         </aside>
         <div className={classes.mainPanel}>
         <Header/>
-        
-        <ListOfTrainee/>
+       <ProfileDetails/>
+     
+  
+  
         </div>
     </div>
   )

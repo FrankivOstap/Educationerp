@@ -1,0 +1,295 @@
+.wrapper {
+  padding: 20px;
+}
+.backBlock {
+  display: flex;
+  align-items: center;
+}
+.backBlock span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.profileDetailsText {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #212b36;
+}
+.ul_list {
+  display: flex;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #212b36;
+}
+.ul_list li {
+  margin-right: 36px;
+}
+.ul_list li::marker {
+  color: #919eab;
+}
+.ul_list li:first-child {
+  list-style-type: none;
+}
+.profileHeadingPage {
+  margin-top: 40px;
+  border-radius: 16px;
+  height: 280px;
+  box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  background-color: white;
+}
+.background {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: #54246d;
+  height: 232px;
+  width: 100%;
+  padding: 20px;
+}
+.blockInfo {
+  display: flex;
+  width: 400px;
+  height: 180px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 0px 24px;
+  position: relative;
+  top: 24%;
+}
+.blockInfo__avatar {
+  width: 128px;
+  height: 128px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+.information h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+.information p {
+  font-weight: 500;
+  margin-top: 8px;
+  opacity: 0.72;
+  font-size: 16px;
+  color: #ffffff;
+}
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+.flexBetween {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexBetween h1 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.panelGeneralInfo {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+  height: 108px;
+  margin-top: 20px;
+}
+.panelGeneralInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.panelIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 100%;
+}
+.align {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.align span {
+  margin-left: 16px;
+}
+.btnManage {
+  width: 100px;
+  height: 34px;
+  background-color: #8f3abc;
+  border: 1px solid #8f3abc;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-family: "Public Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+.panelEnrolledCourses {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.panelEnrolledCourses__block {
+  width: 344px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+}
+.panelEnrolledCourses__block:nth-of-type(2) {
+  border-width: 1px 1px 4px 1px;
+  border-style: solid;
+  border-color: #79349d;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+}
+.graytext {
+  color: #637381;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.panelEnrolledCourses__block__text {
+  margin-left: 16px;
+}
+
+.miniWrapper {
+  padding: 40px;
+  margin-top: 24px;
+  width: 100%;
+  height: 1200px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+}
+.panelOverallStatus {
+  margin-top: 24px;
+  height: 160px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+  padding: 24px;
+}
+.panelOverallStatusTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #212b36;
+}
+.progress {
+  margin-top: 4px;
+  height: 4px;
+  background: #ecc8ff;
+  border-radius: 2px;
+}
+.progress__line {
+  background: #8f3abc;
+  border-radius: 2px;
+  height: 4px;
+  width: 60%;
+}
+.attendanceBlock {
+  padding: 0 24px;
+  width: 30%;
+  height: 208px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+}
+
+.attendanceBlockTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #212b36;
+}
+.circleviolet {
+  margin-right: 8px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #8f3abc;
+  border-radius: 7px;
+}
+.circleblue {
+  margin-right: 8px;
+  background: #2d99ff;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 7px;
+}
+.mt_18 {
+  margin-top: 18px;
+}
+
+.upcomingBlock {
+  padding: 0 24px;
+  width: 68%;
+  height: 208px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+}
+.colorRed {
+  color: #ff4842;
+}
+.colorGray {
+  color: #637381;
+}
+.mt_10 {
+  margin-top: 10px;
+}
+.btnSee {
+  width: 100px;
+  height: 34px;
+  border: 1px solid #8f3abc;
+  color: #8f3abc;
+  background-color: white;
+  border-radius: 10px;
+}
+.cardMarks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.card {
+  width: 319px;
+  height: 134px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remarksContainer {
+  margin-top: 24px;
+  padding: 24px;
+  height: 350px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+}
+.remarksText {
+  color: #637381;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+}

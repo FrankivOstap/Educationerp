@@ -12,6 +12,7 @@ import keyboardopen from '../../assets/Dashboard/keyboardopen.png'
 import bootstrap from '../../assets/Dashboard/bootsrap.png'
 import setting from '../../assets/Dashboard/setting.png'
 import support from '../../assets/Dashboard/support.png'
+
 export default function Sidebar() {
   return (
     <div className={classes.wrapper}>
@@ -32,7 +33,11 @@ export default function Sidebar() {
         <ul>
           <li className={classes.sidebarMenu}>
             <img src={intern} alt="intern" />
-            <span className={classes.menuText}>Intern</span>
+            <span className={classes.menuText}>
+              
+              Intern
+              
+              </span>
           </li>
           <li className={classes.sidebarMenu}>
             <img src={trainer} alt="trainer" />

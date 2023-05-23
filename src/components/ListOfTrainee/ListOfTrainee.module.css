@@ -32,10 +32,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  height: 80px;
   padding: 20px;
 }
-
+.circle {
+  border-radius: 50%;
+}
 .blockInput_search {
   position: relative;
 }
@@ -79,10 +81,16 @@ table {
 
   border-collapse: collapse;
 }
-thead {
-  border-bottom: 1px solid rgb(230, 215, 215);
+
+th {
+  padding: 10px;
+}
+td {
+  padding: 4px;
+  padding-left: 13px;
 }
 .progressbar {
+  width: 60%;
   height: 10px;
   background-color: rgb(112, 233, 112);
   border-radius: 10px;
@@ -100,4 +108,37 @@ thead {
   background-color: #8f3abc;
   width: 51px;
   height: 30px;
+}
+.name {
+  margin-left: 10px;
+}
+.progressFlex {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userComponent {
+  border-top: 1px solid rgb(230, 215, 215);
+}
+
+.tfooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  border-top: 2px solid rgb(230, 215, 215);
+}
+.tfooter__right {
+  width: 300px;
+  display: flex;
+  color: #212b36;
+  font-weight: 400;
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+.dflex {
+  display: flex;
+  align-items: center;
 }

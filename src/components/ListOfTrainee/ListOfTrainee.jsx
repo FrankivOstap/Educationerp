@@ -1,12 +1,17 @@
 import React from "react";
+
 import classes from "./ListOfTrainee.module.css";
+import UserTrainee from "./UserTrainee";
 import plus from "../../assets/Dashboard/Icon Base.png";
 
 import search from "../../assets/HeaderIcons/search.png";
-import arrowbot from '../../assets/arrowbot.png'
+import arrowbot from "../../assets/arrowbot.png";
 
-import ava from '../../assets/HeaderIcons/IMG.png'
-import three from '../../assets/DataGrid/three.png'
+import ava from "../../assets/HeaderIcons/IMG.png";
+import ic from "../../assets/icon/ic_expand_more.png";
+
+import iconLeft from "../../assets/icon/IconButtonLeft.png";
+import iconRight from "../../assets/icon/IconButtonRight.png";
 export default function ListOfTrainee() {
   return (
     <div className={classes.container}>
@@ -39,76 +44,49 @@ export default function ListOfTrainee() {
           </div>
         </div>
         <table>
-            <thead>
-                <tr>
-                    <th>
-                    <input type="checkbox"  />
-                    </th>
-                    <th >
-                        Name
-                    </th>
-                    <th style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                    }} >
-                        Email 
-                        <img src={arrowbot} alt="arrow" />
-                    </th>
-                    <th>
-                        Class
-                    </th>
-                    <th>
-                        Progress
-                    </th>
-                    <th>
-                        Attendance
-                    </th>
-                    <th>
-                        Training period
-                    </th>
-                   
-                   
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <input type="checkbox"  />
-                    </td>
-                    <td><img src={ava} alt="" /></td>
-                    <td>
-                        bianco lancaster
-                    </td>
-                    <td>
-                        qwertyu@gmail.com
-                    </td>
-                    <td>
-                        CAP Hygiene
-                    </td>
-                    <td>
-                        <div className={classes.progressbar}>
-                            <div className={classes.progress}>
-
-                            </div>
-                        </div>
-                        55%
-                    </td>
-                    <td>
-                        40/50
-                    </td>
-                    <td>
-                        2023-2024
-                    </td>
-                    <td>
-                        <button className={classes.btnView}>View</button>
-                    </td>
-                    <td>
-                        <img src={three} alt="" />
-                    </td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th>
+                <input type="checkbox" />
+              </th>
+              <th>Name</th>
+              <th
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                Email
+                <img src={arrowbot} alt="arrow" />
+              </th>
+              <th>Class</th>
+              <th>Progress</th>
+              <th>Attendance</th>
+              <th>Training period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <UserTrainee avatarUser={ava} />
+            <UserTrainee avatarUser={ava} />
+            <UserTrainee avatarUser={ava} />
+            <UserTrainee avatarUser={ava} />
+            <UserTrainee avatarUser={ava} />
+          </tbody>
         </table>
+        <div className={classes.tfooter}>
+          <div className={classes.tfooter__right}>
+            <div>Rows per page:</div>
+            <div className={classes.dflex}>
+              5 <img src={ic} alt="" />
+            </div>
+            <div>6-10 of 11</div>
+            <div>
+              <img src={iconLeft} alt="" />
+              <img src={iconRight} alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
